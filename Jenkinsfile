@@ -1,31 +1,30 @@
 pipeline {
-    agent any
+    angent any 
     stages {
         stage ('Build') {
             steps {
-                echo "Building"
+                echo 'Building'
             }
         }
-        stage ('Test') {
+        stage ('Build') {
             steps {
-                echo "Testing"
+                echo 'Building'
             }
         }
-        stage ('Deploy') {
+        stage ('Build') {
             steps {
-                echo "Deploying"
+                echo 'Building'
             }
         }
-    }
-    post {
-        always {
-            echo "I'm awesome. I run always"
+        stage ('Build') {
+            steps {
+                echo 'Building'
+            }
         }
-        success {
-            echo 'I run when you are successful'
-        }
-        failure {
-            echo 'I run when you fail'
+        stage ('Build') {
+            steps {
+                echo 'Building'
+            }
         }
     }
 }
