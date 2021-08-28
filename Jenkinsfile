@@ -6,24 +6,24 @@ pipeline {
                 echo 'Building'
             }
         }
-        stage ('Build') {
+        stage ('Test') {
             steps {
-                echo 'Building'
+                echo 'Testing'
             }
         }
-        stage ('Build') {
+        stage ('Deploy') {
             steps {
-                echo 'Building'
+                echo 'Deploying'
             }
         }
-        stage ('Build') {
+        stage ('Dev') {
             steps {
-                echo 'Building'
+                echo 'Development'
             }
         }
-        stage ('Build') {
+        stage ('Ship') {
             steps {
-                echo 'Building'
+                echo 'Shipment'
             }
         }
     }
